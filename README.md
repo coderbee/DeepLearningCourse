@@ -1,5 +1,5 @@
 # DeepLearningCourse
-Assignments and learnings from Coursera's Deep learning course
+learnings from Coursera's Deep learning course
 
 ## The broad steps in implementing neural netwoks are as follows
 
