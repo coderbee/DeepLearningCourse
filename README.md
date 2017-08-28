@@ -10,7 +10,7 @@ The broad steps in implementing neural netwoks are as follows
 2) Initialize model parameters
 3) Iterate through this
     - Calculate cost function J using forward propogation
-    - Calculate the current dradients using backward propogation
+    - Calculate the current gradients using backward propogation
     - Update weights 
 
     
