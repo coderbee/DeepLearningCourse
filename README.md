@@ -12,4 +12,13 @@ Assignments and learnings from Coursera's Deep learning course
     - Calculate the current gradients using backward propogation
     - Update weights 
 
+## Common Python commands used
+```
+import numpy as np  
+m_train = train_set_x_orig.shape[0]     => use .shape, .reshape to access dimensions, vectorize matrices into columns
+np.zeros([dim,1])                       
+dw = np.dot(X, (A - Y).T) /m            => dot product equivalent to Matrix multiplication ( 2D matrices)
+c1 = np.multiply(Y, np.log(A))          => Element-wise matrix multiplication
+db = np.sum(A - Y ) /m                  => Subtract matrices A - Y (with broadcasting if necessary), then add element-wise to give a single number
+```
     
