@@ -16,7 +16,7 @@ Assignments and learnings from Coursera's Deep learning course
 ```
 import numpy as np                      => numpy is a great choice for linear algebra/math functions needed for NN  
 m_train = train_set_x_orig.shape[0]     => use .shape, .reshape to access dimensions, vectorize matrices into columns
-np.zeros([dim,1])                       
+np.zeros([dim,1])                       => initialize matrices with 0's
 dw = np.dot(X, (A - Y).T) /m            => dot product equivalent to Matrix multiplication ( 2D matrices)
 c1 = np.multiply(Y, np.log(A))          => Element-wise matrix multiplication
 db = np.sum(A - Y ) /m                  => Subtract matrices A - Y (broadcasting if needed), then add element-wise to give a single number
