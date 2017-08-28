@@ -14,7 +14,7 @@ Assignments and learnings from Coursera's Deep learning course
 
 ## Common Python commands used
 ```
-import numpy as np  
+import numpy as np                      => numpy is a great choice for linear algebra/math functions needed for NN  
 m_train = train_set_x_orig.shape[0]     => use .shape, .reshape to access dimensions, vectorize matrices into columns
 np.zeros([dim,1])                       
 dw = np.dot(X, (A - Y).T) /m            => dot product equivalent to Matrix multiplication ( 2D matrices)
