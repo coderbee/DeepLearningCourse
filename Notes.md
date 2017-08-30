@@ -16,6 +16,8 @@
     - Train for longer time 
  - Secondly, High Variance in model?? Try this
     - More training examples
-    - Regularization
+    - _Regularization_
     - NN architecture search
+    
+  - ###Regularization
     
