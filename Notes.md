@@ -20,11 +20,11 @@
     - NN architecture search
     
   - Regularization is a common technique used to couter overfiting. It involves adding an extra term to the cost function J(w,b). 
-    - L2 regularization: J(w,b) = (1/m)Sum_over_m(Loss function) + ** lambda/2m * ||w||22 ** (~rms value of w's)
-    - L1 regularization: J(w,b) = (1/m)Sum_over_m(Loss function) + ** lambda/2m * ||w||11 ** (absolute values of w)
+    - L2 regularization: J(w,b) = (1/m)Sum_over_m(Loss function) + **lambda/2m * ||w||22** (~rms value of w's)
+    - L1 regularization: J(w,b) = (1/m)Sum_over_m(Loss function) + **lambda/2m * ||w||11** (absolute values of w)
   
   - L2 Regularization is commonly used. Note that during backprop, we update weaights for the layers as follows
-    - dw[l] is the partial derivative of dJ/dw. with L2 regularization, this now has extra term *(lambda/m)W[l]* (which is the parivative of the L2 term in J(w,b)
-    - w[l] := w[l] - alpha * dw[l] = w[l] (1 - alpha/lambda) +d(from backprob term)
+    - dw[l] is the partial derivative of dJ/dw. with L2 regularization, this now has extra term **(lambda/m)W[l]** (which is the parivative of the L2 term in J(w,b)
+    - w[l] := w[l] - alpha * dw[l] = w[l] **(1 - alpha/lambda)** +d(from backprob term)
     
   
