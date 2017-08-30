@@ -22,3 +22,16 @@ c1 = np.multiply(Y, np.log(A))          => Element-wise matrix multiplication
 db = np.sum(A - Y ) /m                  => Subtract matrices A - Y (broadcasting if needed), then add element-wise to give a single number
 ```
     
+## Popular frameworks for Neural Networks
+-   Caffe
+-   CNTK
+-   Keras
+-   Pytorch
+-   Tensorflow
+-   Theano
+-   Lasagne
+-   PaddlePaddle
+-   mxnet
+-   DL4J
+
+Consider imstalling the following: Anaconda Python Environment -> TensorFlow -> Keras libraries  
