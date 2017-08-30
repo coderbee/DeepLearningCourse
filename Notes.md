@@ -25,6 +25,7 @@
   
   - L2 Regularization is commonly used. Note that during backprop, we update weaights for the layers as follows
     - dw[l] is the partial derivative of dJ/dw. with L2 regularization, this now has extra term **(lambda/m)W[l]** (which is the parivative of the L2 term in J(w,b)
-    - w[l] := w[l] - alpha * dw[l] = w[l] **(1 - alpha/lambda)** +d(from backprob term)
+    - w[l] := w[l] - alpha * dw[l] = w[l] **(1 - alpha x lambda/m)** - alpha(from backprob term)
+    - L2 regularization has effect of **weight decay** 
     
   
