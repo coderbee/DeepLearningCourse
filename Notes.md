@@ -19,5 +19,7 @@
     - _Regularization_
     - NN architecture search
     
-  - ###Regularization
+  - Regularization is a common technique used to couter overfiting. It involves adding an extra term to the cost function J(w,b). 
+    - L2 regularization: J(w,b) = (1/m)Sum_over_m(Loss function) + ** lambda/2m * ||w||22 ** (~rms value of w's)
+    - L1 regularization: J(w,b) = (1/m)Sum_over_m(Loss function) + ** lambda/2m * ||w||11 ** (absolute values of w)
     
