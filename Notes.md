@@ -48,6 +48,12 @@
     - Not as accurate as moving window average, but easy to code and track history of a quantity efficiently (1 Line of code)  
     - Initialize with bias term to prevent initial condidion
         * use V_t / ( 1 - beta^t) in place of V_t 
+        
+ - Gradient descent with **Momentum** uses exp. weighted averages
+    - instead of dW(or db) use V_dW = beta* V_dW + (1 - beta)* V_dW in the update equations
+    - W := W - alpha * V_dW
+    
+ - **RMSprop** 
     
     
     
