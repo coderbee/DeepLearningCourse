@@ -1,4 +1,4 @@
-## Course2 
+## Hyperparameter tuning, Regularization and Optimization, Course2
 ### Week1 
 - Applied ML is highly iterative, hyperparameter choices aren't clear initially
 - Training/Dev(hold-out crossvalidation)/Test sets 
@@ -60,6 +60,10 @@
  - Adam's optimization: Momentum + RMSProp 
  
  - Saddle points and Plateaus are more common in high dimentional spaces. Local optima are much more unlikely though.
+ 
+### Week3 
+
+ - Hyperparameter tuning: Use random points in the hyperparameter space, go from coarse to fine. This way each dimention gets to see many values reflected in the various random points.
     
     
     
