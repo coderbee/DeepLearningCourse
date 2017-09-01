@@ -43,7 +43,12 @@
     - Small training set ( ~2000 ) , use Batch gradient descent
     - Otherwise, use minibatch sizes like 64,128...1024 (Make minibatch input data fit in CPU/GPU memory)
  
- - Exponentially weighted averages: 
+ - Exponentially weighted averages: **V_t = beta * V_t-1  +  (1 - beta)* Theta_t**
+    - roughly equal to average of the last 1/(1 -beta) theta samples
+    - Not as accurate as moving window average, but easy to code and track history of a quantity efficiently (1 Line of code)  
+    - Initialize with bias term to prevent initial condidion
+        * use V_t / ( 1 - beta^t) in place of V_t 
+    
     
     
 
