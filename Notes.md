@@ -1,5 +1,5 @@
 ## Course2 
-###Week1 
+### Week1 
 - Applied ML is highly iterative, hyperparameter choices aren't clear initially
 - Training/Dev(hold-out crossvalidation)/Test sets 
 - In Big Data era (1Million training samples etc) 98%/1%/1% split isn't uncommon
@@ -31,9 +31,20 @@
 
 ### Week2 
 
-Mini-batch gradient descent: Process a mini-batch of inputs X{i} at a time. FOr large inputs mini batch runs much faster than batch gradient descent.
+- Mini-batch gradient descent: Process a mini-batch of inputs X{i} at a time. FOr large inputs mini batch runs much faster than batch gradient descent.
     - In gradient descent we run fwd and backwd propagation over ALL training samples in a single iteration
     - When input size is large (~5 million), going over all data thru each iteration makes gradient descent slow. We want Gradient descent to learn weights quickly and not wait for all the input data od be seen before making progress.
+    - Mini batch size = m => Normal batch gradient descent
+        * takes big steps and converges towards the minima in each step
+        * Vectorizing inputs helps but each grad descent epoch is longer
+    - Mini batch size = 1 => Stochastic gradient descent
+        * Can be noisy, it doesnt converge and takes a zig zag path while approaching minima
+        * benefit of vectorization is lost with minibatch size only 1
+    - Small training set ( ~2000 ) , use Batch gradient descent
+    - Otherwise, use minibatch sizes like 64,128...1024 (Make minibatch input data fit in CPU/GPU memory)
+ 
+ - Exponentially weighted averages: 
+    
     
 
 
