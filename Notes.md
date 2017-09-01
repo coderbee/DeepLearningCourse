@@ -1,4 +1,5 @@
-## Course2 Week1 
+## Course2 
+###Week1 
 - Applied ML is highly iterative, hyperparameter choices aren't clear initially
 - Training/Dev(hold-out crossvalidation)/Test sets 
 - In Big Data era (1Million training samples etc) 98%/1%/1% split isn't uncommon
@@ -27,5 +28,9 @@
     - dw[l] is the partial derivative of dJ/dw. with L2 regularization, this now has extra term **(lambda/m)W[l]** (which is the parivative of the L2 term in J(w,b)
     - w[l] := w[l] - alpha * dw[l] = w[l] **(1 - alpha x lambda/m)** - alpha(from backprob term)
     - L2 regularization has effect of **weight decay** 
+
+### Week2 
+
+
     
   
