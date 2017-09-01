@@ -54,6 +54,8 @@
     - W := W - alpha * V_dW
     
  - **RMSprop** 
+    - S_dW = beta2 * S_dW + (1 - beta2)dW2
+    - W:= W - alpha* DW / sqrt(S_dW)
     
     
     
