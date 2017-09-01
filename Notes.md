@@ -64,7 +64,8 @@
 ### Week3 
 
  - Hyperparameter tuning: Use random points in the hyperparameter space, go from coarse to fine. This way each dimention gets to see many values reflected in the various random points.
-    
+ - Use the approproate scale while sampling hyperparameters. For eg it might be beneficial to choose a logarithmic scale for alpha, beta
+ - *Train many models in parallel* if you have the time/computation, with different hyperparameters
     
     
 
