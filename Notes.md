@@ -36,7 +36,7 @@
     - When input size is large (~5 million), going over all data thru each iteration makes gradient descent slow. We want Gradient descent to learn weights quickly and not wait for all the input data od be seen before making progress.
     - Mini batch size = m => Normal batch gradient descent
         * takes big steps and converges towards the minima in each step
-        * Vectorizing inputs helps but each grad descent epoch is longer
+        * Vectorizing inputs helps but the grad descent iteration is longer
     - Mini batch size = 1 => Stochastic gradient descent
         * Can be noisy, it doesnt converge and takes a zig zag path while approaching minima
         * benefit of vectorization is lost with minibatch size only 1
@@ -58,6 +58,8 @@
     - W:= W - alpha* DW / sqrt(S_dW)
     
  - Adam's optimization: Momentum + RMSProp 
+ 
+ - Saddle points and Plateaus are more common in high dimentional spaces. Local optima are much more unlikely though.
     
     
     
