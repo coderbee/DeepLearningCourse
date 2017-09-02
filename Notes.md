@@ -73,6 +73,7 @@
         - Create a session, Initialize the session
         - Run the session to execute the graph
         - The backpropagation and optimization is automatically done when running the session 
+  - tf.Constant() , tf.Variable(), tf.global_variables_initializer(), tf.multiply(), tf.Session(), tf.placeholder()
  
     
     
