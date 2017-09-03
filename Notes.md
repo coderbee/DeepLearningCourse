@@ -86,8 +86,11 @@
 - Setting up your goal
     - Use a single number Evaluation Metric
     - Optimizing and Satisficing metrics: If you care about several metrics make one of them optimizing and the remining ones satisficing (i.e any value subject to a threshold is satisfactory) 
-            * For eg. in an image classifier, Accuracy is the optimizing metric, subject to Runtime(satisficing metric) being less than say 100ms. 
+        * For eg. in an image classifier, Accuracy is the optimizing metric, subject to Runtime(satisficing metric) being less than say 100ms. 
     - Select Dev/Test sets from the **same distribution**. THis prevents optimizing the model to a dev set and later having to shift goalpost to satisfy the test set nuances. Use random sampling and choose dev/test set from datra you assume to see in the future. 
+    - Train/dev/test data split 
+        * Historically for small data it was 70/30 or 60/20/20  split. With big data (Million plus inputs) its ~98/1/1
+    - Other consideration: If you do well with metric + dev/test set but this doesnt translate to doing well on real world application, time to change either of the two. For eg. Cat classifier doing well with dev/test cat images but not so well when confronted with low res, blurry images from users. 
     
     
     
