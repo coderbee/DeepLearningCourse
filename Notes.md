@@ -77,11 +77,18 @@
  
 
 ## ML strategies, Course3
-Chain of assumptions in ML 
- - Fit training set well on cost function 
- - Fit dev set well on cost function 
- - Fit test set well on cost function
- - Performs well in real world 
+### Week1 
+- Chain of assumptions in ML 
+    - Fit training set well on cost function 
+    - Fit dev set well on cost function 
+    - Fit test set well on cost function
+    - Performs well in real world 
+- Setting up your goal
+    - Use a single number Evaluation Metric
+    - Optimizing and Satisficing metrics: If you care about several metrics make one of them optimizing and the remining ones satisficing (i.e any value subject to a threshold is satisfactory) 
+            * For eg. in an image classifier, Accuracy is the optimizing metric, subject to Runtime(satisficing metric) being less than say 100ms. 
+    - 
+    
     
     
 
