@@ -87,7 +87,7 @@
     - Use a single number Evaluation Metric
     - Optimizing and Satisficing metrics: If you care about several metrics make one of them optimizing and the remining ones satisficing (i.e any value subject to a threshold is satisfactory) 
             * For eg. in an image classifier, Accuracy is the optimizing metric, subject to Runtime(satisficing metric) being less than say 100ms. 
-    - Select Dev/Test sets from the same distribution. THis prevents optimizing the model to a dev set and later having to shift goalpost to satisfy the test set nuances. Use **random sampling** of input data (or perhaps stratified sampling etc) 
+    - Select Dev/Test sets from the **same distribution**. THis prevents optimizing the model to a dev set and later having to shift goalpost to satisfy the test set nuances. Use random sampling and choose dev/test set from datra you assume to see in the future. 
     
     
     
