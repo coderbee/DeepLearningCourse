@@ -75,9 +75,15 @@
         - The backpropagation and optimization is automatically done when running the session 
   - tf.Constant() , tf.Variable(), tf.global_variables_initializer(), tf.multiply(), tf.Session(), tf.placeholder()
  
-    
-    
 
+## ML strategies, Course3
+Chain of assumptions in ML 
+ - Fit training set well on cost function 
+ - Fit dev set well on cost function 
+ - Fit test set well on cost function
+ - Performs well in real world 
+    
+    
 
     
   
