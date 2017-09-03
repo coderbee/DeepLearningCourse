@@ -91,6 +91,7 @@
     - Train/dev/test data split 
         * Historically for small data it was 70/30 or 60/20/20  split. With big data (Million plus inputs) its ~98/1/1
     - Other consideration: If you do well with metric + dev/test set but this doesnt translate to doing well on real world application, time to change either of the two. For eg. Cat classifier doing well with dev/test cat images but not so well when confronted with low res, blurry images from users. 
+    - Comparing to human level performance: (Bayes optimal error -> lowest theoritical error that can be reached for a X->y mapping 
     
     
     
