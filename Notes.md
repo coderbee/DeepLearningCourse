@@ -91,9 +91,19 @@
     - Train/dev/test data split 
         * Historically for small data it was 70/30 or 60/20/20  split. With big data (Million plus inputs) its ~98/1/1
     - Other consideration: If you do well with metric + dev/test set but this doesnt translate to doing well on real world application, time to change either of the two. For eg. Cat classifier doing well with dev/test cat images but not so well when confronted with low res, blurry images from users. 
-    - Comparing to human level performance: (Bayes optimal error -> lowest theoritical error that can be reached for a X->y mapping 
-    
-    
+- Comparing to human level performance: (Bayes optimal error -> lowest theoritical error that can be reached for a X->y mapping)
+        * Typically, systems dont improve a huge lot after surpassing human level performance because a) the human level performance is pretty close to Bayes optimal performance and b) lot of tactics can be used to improve systems to come upto human level performance.
+    - Comparing to human level performance can guide whether we want to improve the bias or variance performance of a model. 
+        - Avoidable bias is the amount of bias the system has compared to a human level performance
+    - Human level error can act as a proxy to Bayes error. 
+- Surpassing Human level performance:  When the training error of the system is less than the training error of experienced humans, it becomes unclear whether we focus our efforts on reducing Bias or variance (no eassy frame of reference)  
+- ML surpasses human level performance in 
+    - Logistics
+    - Loan approval
+    - Online advertising
+    - Product recommendations
+- 
+
     
 
     
