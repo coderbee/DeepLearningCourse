@@ -102,6 +102,7 @@
     - Loan approval
     - Online advertising
     - Product recommendations
+    -(typically Structured Ddata problems, Huge data input models, not a natural perception task)
 - 
 
     
