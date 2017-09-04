@@ -103,7 +103,48 @@
     - Online advertising
     - Product recommendations
     -(typically Structured Ddata problems, Huge data input models, not a natural perception task)
-- 
+   
+- Error Analysis
+    - Incorrectly labeled examples
+        - In training set: DL algorithms are robust to *random* mislabeled errors. 
+        - in dev/test set: carry out error analysis to see it this is causing significant % of the errors
+        - Training set and dev/test data have slightly different distributions -> DL algos are OK with it
+        - Dev and Test data *must* come from same distribution thought.. DL algos sensitive to this. 
+    - Build first system quickly, then iterate. 
+        - Set up dev/test set and metric
+        - Build intitial system quickly
+        - Use Bias/Variance analysis and Error analysis to prioritize next steps
+    - Test set: a set of examples used only to assess the performance of a fully-trained classifier. After assessing the final model on the test set, ONE MUST NOT tune the model any further. 
+- Training and testing on different distributions
+    - Define a new set carved our ot the training set called training-dev set. The training set and training-dev set have *same* distribution. 
+    - If Training-dev set performance is much worse that training set performance, we have a *Variance* problem since distribution is same
+    - If Training-dev set performance much worse than dev-set performance, we have a *Data Mismatch* problem since since cause for this is different distribution
+    - Data Mismatch is a new problem to solve when you have a different training and dev/test distributions
+        - Carry out manual error analysis 
+        - Make training data more similar or collect more data similar to dev/test sets
+            - Artificial data synthesis. This works, but be careful that you arent synthesizing data from a small subset of all possible values..or else the model will overfit to your particular synthesized subset.
+            
+-  Learning from Multiple tasks: 
+    - Transfer learning (A->B)makes sense when a) both tasks have same inputs (audio, image etc), b) you had a lot of data to train for A  and the new task B is relatively small 
+    - Multitask learning is learning many tasks simultaneously
+        - Unlike softmax ML which assigns single label to each image, Multitask learning assigns multiple labels.
+        - Makes sense when a) set of tasks benefit from shared lower-level features, b) amount of data for each task is quite similar
+        - Can train big enough neural networks
+        
+-End to End Deep learning: Neural networks are nowadays replacing a a System with a set of setps with a single end to end model.
+    - Require alarge dataset for these problems.
+    - Pros of E2E Deep Learning
+        - E2E lets the data speak instead of being forced to reflect preconceptions for sub block designers
+        - Less hand designing of components, features
+    - Cons 
+        - Need a large amount of data
+        - Excludes potential useful hand-designed components (these play bigger role when training set isnt large)
+    
+    
+    
+
+
+        
 
     
 
