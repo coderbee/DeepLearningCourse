@@ -34,4 +34,4 @@ db = np.sum(A - Y ) /m                  => Subtract matrices A - Y (broadcasting
 -   mxnet
 -   DL4J
 
-Consider imstalling the following: Anaconda Python Environment -> TensorFlow -> Keras libraries  
+Consider installing the following: Anaconda Python Environment -> TensorFlow -> Keras libraries  
