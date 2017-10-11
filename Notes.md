@@ -33,7 +33,7 @@
 
 - Mini-batch gradient descent: Process a mini-batch of inputs X{i} at a time. FOr large inputs mini batch runs much faster than batch gradient descent.
     - In gradient descent we run fwd and backwd propagation over ALL training samples in a single iteration
-    - When input size is large (~5 million), going over all data thru each iteration makes gradient descent slow. We want Gradient descent to learn weights quickly and not wait for all the input data od be seen before making progress.
+    - When input size is large (~5 million), going over all data thru each iteration makes gradient descent slow. We want Gradient descent to learn weights quickly and not wait for all the input data to be seen before making progress.
     - Mini batch size = m => Normal batch gradient descent
         * takes big steps and converges towards the minima in each step
         * Vectorizing inputs helps but the grad descent iteration is longer
