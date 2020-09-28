@@ -1,4 +1,11 @@
-## Hyperparameter tuning, Regularization and Optimization, Course2
+## Course1 Neural Networks and Deep Learning
+### Week1
+- Single neuron
+- Supervised Learning
+
+
+
+## Course2 - Hyperparameter tuning, Regularization and Optimization
 ### Week1
 - Applied ML is highly iterative, hyperparameter choices aren't clear initially
 - Training/Dev(hold-out crossvalidation)/Test sets 
